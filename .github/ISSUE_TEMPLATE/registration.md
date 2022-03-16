@@ -1,11 +1,11 @@
 ---
 name: registration
 about: Register for the DataChallange and successive Hackdays @ N (non-binding)
-title: ''
+title: Register for Hackdays and DataChallenge @N
 labels: ''
-assignees: ''
+assignees: ratnanil
 
 ---
 
-- [ ] I'm interested in participating
-- [ ] I would like to know more
+Name: 
+ZHAW Kürzel:
