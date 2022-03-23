@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for showing interest in our DataChallange and the Hackdays
+        Thank you for showing interest in our DataChallange and the Hackdays. Fill out this form so we know more about you!
   - type: input
     id: name
     attributes:
@@ -20,9 +20,9 @@ body:
   - type: input
     id: kuerzel
     attributes:
-      label: Kürzel
-      description: Give us your ZHAW Kürzel 
-      placeholder: rata@zhaw.ch
+      label: ZHAW Username
+      description: Provide your ZHAW Username ("Kürzel")
+      placeholder: e.g. rata
     validations:
       required: true
   - type: dropdown
@@ -33,24 +33,23 @@ body:
       options:
         - Very certain (Default)
         - Not sure
-        - definitly not
+        - Definitly not
     validations:
       required: true
   - type: textarea
     id: textarea
     attributes:
-      label: longtext
+      label: Free Text
       description: Anything else you want to tell us?
   - type: dropdown
     id: programme 
     attributes:
-      label: programme
-      description: In which programm are you enrolled in?
+      description: In which programme are you enrolled in?
       options:
         - Bachelor
         - Master
         - Empoloyee
-        - other (please specify below)
+        - other
   - type: dropdown
     id: institute
     attributes:
@@ -62,11 +61,4 @@ body:
         - ILGI Institut für Lebensmittel- und Getränkeinnovation
         - IUNR Institut für Umwelt und Natürliche Ressourcen
         - ICLS Institut für Computational Life Sciences
-        - other (please specify below)
-  - type: input
-    id: details
-    attributes:
-      label: details
-      description: If you specified "other" in one of the above please specify here
-      placeholder: rata@zhaw.ch
-
+        - other
