@@ -1,5 +1,4 @@
 name: Contact-form
-description: Fill out this contact from to show your interested in participating in the DataChallange and successive Hackdays (non-binding)
 title: I'm interested in participating!
 labels: ["bug", "triage"]
 assignees:
