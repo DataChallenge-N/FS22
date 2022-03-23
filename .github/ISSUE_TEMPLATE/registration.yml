@@ -13,7 +13,7 @@ body:
     id: name
     attributes:
       label: Name
-      description: Tell us your name (you can use a pseudonym if you want to):
+      description: Tell us your name (you can use a pseudonym if you want to)
       placeholder: Your Name
     validations:
       required: true
