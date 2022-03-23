@@ -25,17 +25,6 @@ body:
       placeholder: e.g. rata
     validations:
       required: true
-  - type: dropdown
-    id: sureness 
-    attributes:
-      label: Sure
-      description: How certain are you that you want to participate?
-      options:
-        - Very certain (Default)
-        - Not sure
-        - Definitly not
-    validations:
-      required: true
   - type: textarea
     id: textarea
     attributes:
