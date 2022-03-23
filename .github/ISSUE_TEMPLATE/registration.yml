@@ -1,0 +1,72 @@
+name: Contact-form
+description: Fill out this contact from to show your interested in participating in the DataChallange and successive Hackdays (non-binding)
+title: "I'm interested!"
+labels: ["bug", "triage"]
+assignees:
+  - ratnanil
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for showing interest in our DataChallange and the Hackdays
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Tell us your name (you can use a pseudonym if you want to):
+      placeholder: Your Name
+    validations:
+      required: true
+  - type: input
+    id: kuerzel
+    attributes:
+      label: Kürzel
+      description: Give us your ZHAW Kürzel 
+      placeholder: rata@zhaw.ch
+    validations:
+      required: true
+  - type: dropdown
+    id: sureness 
+    attributes:
+      label: Sure
+      description: How certain are you that you want to participate?
+      options:
+        - Very certain (Default)
+        - Not sure
+        - definitly not
+    validations:
+      required: true
+  - type: textarea
+    id: textarea
+    attributes:
+      label: longtext
+      description: Anything else you want to tell us?
+  - type: dropdown
+    id: programme 
+    attributes:
+      label: programme
+      description: In which programm are you enrolled in?
+      options:
+        - Bachelor
+        - Master
+        - Empoloyee
+        - other (please specify below)
+  - type: dropdown
+    id: institute
+    attributes:
+      label: institute
+      description: In which institute are you enrolled or working in?
+      options:
+        - ICBT Institut für Chemie und Biotechnologie
+        - IFM Institut für Facility Management
+        - ILGI Institut für Lebensmittel- und Getränkeinnovation
+        - IUNR Institut für Umwelt und Natürliche Ressourcen
+        - ICLS Institut für Computational Life Sciences
+        - other (please specify below)
+  - type: input
+    id: details
+    attributes:
+      label: details
+      description: If you specified "other" in one of the above please specify here:
+      placeholder: rata@zhaw.ch
+
