@@ -44,7 +44,7 @@ body:
   - type: dropdown
     id: programme 
     attributes:
-      description: In which programme are you enrolled in?
+      label: Your status at ZHAW (optional)
       options:
         - Bachelor
         - Master
@@ -53,8 +53,7 @@ body:
   - type: dropdown
     id: institute
     attributes:
-      label: institute
-      description: In which institute are you enrolled or working in?
+      label: Your institute (optional)
       options:
         - ICBT Institut für Chemie und Biotechnologie
         - IFM Institut für Facility Management
