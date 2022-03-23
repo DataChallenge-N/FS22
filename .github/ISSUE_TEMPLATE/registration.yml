@@ -67,6 +67,6 @@ body:
     id: details
     attributes:
       label: details
-      description: If you specified "other" in one of the above please specify here:
+      description: If you specified "other" in one of the above please specify here
       placeholder: rata@zhaw.ch
 
