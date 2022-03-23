@@ -35,9 +35,9 @@ body:
     attributes:
       label: Your status at ZHAW (optional)
       options:
-        - Bachelor
-        - Master
-        - Empoloyee
+        - Bachelor student
+        - Master student
+        - Employee
         - other
   - type: dropdown
     id: institute
