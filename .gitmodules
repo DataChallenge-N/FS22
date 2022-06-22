@@ -1,0 +1,9 @@
+[submodule "pfaffrob"]
+	path = pfaffrob
+	url = https://github.com/pfaffrob/datachallenge_deer
+[submodule "nikitakrahenbuhl"]
+	path = nikitakrahenbuhl
+	url = https://github.com/nikitakrahenbuhl/datachallenge-n
+[submodule "timfaessler-grbiuzh"]
+	path = timfaessler-grbiuzh
+	url = https://github.com/grbiuzh/GEO880-datachallenge.git
