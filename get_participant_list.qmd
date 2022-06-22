@@ -1,0 +1,36 @@
+---
+title: "Untitled"
+format: html
+---
+
+
+```{sh}
+
+# get all issues and saves the output as a json
+gh issue list --json author,body > participants.json
+
+# use jq to create a csv from the json
+jq -r ".[] | [.author.login, .body] | @csv" participants.json > participants.csv
+```
+
+
+```{r}
+library(tidyverse)
+participants <- read_csv("participants.csv", col_names = c("user", "body"))
+
+body_split <- str_split_fixed(participants$body, "\\n\\n",10)
+
+
+body_split <- body_split[,c(2,4,6,8,10)]
+
+colnames(body_split) <- c("name","username","free_text","status","institute")
+
+participants <- cbind(participants,body_split)
+
+participants$body <- NULL
+
+participants
+
+write_csv(participants, "participants2.csv")
+
+```
